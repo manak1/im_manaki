@@ -420,4 +420,74 @@ video {
   height: 2px;
   width: 16px;
 }
+
+.main__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__box {
+  margin-top: 80px;
+  margin-left: 210px;
+}
+
+.main__sun {
+  top: -88px;
+  position: relative;
+  right: 11%;
+}
+
+.main__sun-img {
+  width: auto;
+  height: 700px;
+}
+
+.main__name {
+  color: white;
+  font-size: 12rem;
+  line-height: 120px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 5px;
+}
+
+.main__underBar {
+  position: relative;
+  display: block;
+}
+
+.main__underBar:before {
+  content: "";
+  width: 88px;
+  background-color: red;
+  height: 4px;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  top: 30px;
+}
+
+.main__underBar:after {
+  content: "";
+  width: 88px;
+  background-color: red;
+  height: 4px;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  top: 44px;
+  left: 48px;
+}
+
+.main__info {
+  color: white;
+  font-size: 2.8rem;
+  text-decoration: none;
+  margin-top: 72px;
+}
 /*# sourceMappingURL=style.css.map */
