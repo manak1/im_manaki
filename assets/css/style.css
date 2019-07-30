@@ -421,10 +421,6 @@ video {
   width: 16px;
 }
 
-.main {
-  height: 100vh;
-}
-
 .main__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -436,18 +432,19 @@ video {
 }
 
 .main__box {
-  margin-left: 11%;
+  margin-top: 80px;
+  margin-left: 210px;
 }
 
 .main__sun {
-  top: -72px;
+  top: -88px;
   position: relative;
-  right: 13%;
+  right: 11%;
 }
 
 .main__sun-img {
   width: auto;
-  height: 545px;
+  height: 700px;
 }
 
 .main__name {
