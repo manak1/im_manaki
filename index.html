@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.typekit.net/yny2znm.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css"
-        integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
+
+
     <script src="https://kit.fontawesome.com/016ce68e35.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/fullpage.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+
+    <title>MANAKI IKEDA PORTFOLIO</title>
 </head>
 
 <body>
@@ -47,39 +50,40 @@
 
         </div>
 
+        <div id='loader' class="header__loader"></div>
+
     </header>
 
     <div id="fullPage">
 
-        <section class="main section s1">
+        <section id='s1' class="main section s1">
 
             <div class="main__wrapper">
 
-
                 <div class="main__box">
-
                     <h1 class="main__name">
                         MANAKI<br>IKEDA
                     </h1>
-
                     <span class='main__underBar'></span>
-
                     <p class='main__info'>web designer /<br>markup engineer.</p>
-
                 </div>
 
-
-                <div class="main__sun">
-
-                    <img class='main__sun-img' src="./assets/img/sun2.svg" onmousedown="return false;"
+                <div class="layer main__sun" id="demo">
+                    <img class='main__sun-img' data-depth='0.4' src="./assets/img/sun3.svg" onmousedown="return false;"
                         oncontextmenu="return false;" alt="">
 
+                    <img data-depth='0.2' src="./assets/img/moonlight.png" alt="" class="layer main__sunLight-img">
+                    <img data-depth='0.2' src="./assets/img/moonlight.png" alt="" class="layer main__sunLight-img">
+
                 </div>
+
+
+
             </div>
+
         </section>
 
-
-        <section class="main section s2">
+        <section id='s2' class="main section s2">
 
             <div class="main__wrapper">
 
@@ -87,7 +91,7 @@
                 <div class="main__box">
 
                     <h1 class="main__name">
-                        MANAKI<br>IKEDA
+                        KUON<br>YAGI
                     </h1>
 
                     <span class='main__underBar'></span>
@@ -99,7 +103,7 @@
 
                 <div class="main__sun">
 
-                    <img class='main__sun-img' src="./assets/img/sun2.svg" onmousedown="return false;"
+                    <img class='main__sun-img' src="./assets/img/moon3.svg" onmousedown="return false;"
                         oncontextmenu="return false;" alt="">
 
                 </div>
@@ -111,13 +115,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"
         integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
 
+    <script src='./assets/js/fullpage.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./assets/js/common.js'></script>
+
+
 
     <script>
         new fullpage('#fullPage', {
             autoScrolling: true,
-            navigation: true
+            navigation: true,
+            navigationPosition: 'left',
         })
+        let scene = document.getElementById('demo');
+        let parallaxINstance = new Parallax(scene);
     </script>
+
+
 </body>
 
 </html>
