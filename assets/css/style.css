@@ -466,6 +466,12 @@ video {
   height: 550px;
   margin-left: 240px;
   z-index: 1;
+  /* 
+        transform: translate3d(-300px, 0, 0) !important;
+        */
+  opacity: 0;
+  -webkit-transition-duration: 0 !important;
+          transition-duration: 0 !important;
 }
 
 .main__sunLight-img {
